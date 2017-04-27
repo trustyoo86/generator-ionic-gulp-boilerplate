@@ -41,7 +41,7 @@ module.exports = class extends Generator {
       this.templatePath('package.json'),
       this.destinationPath('package.json'),
       {
-        appName: this._.underscored(this.appName),
+        appName: this.appName,
         userName: this.userName,
         userEmail: this.userMail
       }
