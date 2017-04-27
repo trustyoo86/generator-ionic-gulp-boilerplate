@@ -1,6 +1,6 @@
 {
   "name": "generator-ionic-gulp-boilerplate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "ionic gulp build boilerplate",
   "homepage": "",
   "author": {
@@ -15,6 +15,7 @@
   "keywords": [
     "yeoman-generator",
     "ionic",
+    "ionic framework",
     "ionic-generator",
     "gulp",
     "boilerplate"
