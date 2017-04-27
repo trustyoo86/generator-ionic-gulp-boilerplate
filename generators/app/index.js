@@ -5,7 +5,6 @@ const yosay = require('yosay');
 
 module.exports = class extends Generator {
   prompting() {
-    var done = this.async();
     // Have Yeoman greet the user.
     this.log(yosay(
       'Welcome to the shining ' + chalk.red('generator-ionic-gulp-boilerplate') + ' generator!'
@@ -34,9 +33,7 @@ module.exports = class extends Generator {
       this.appName = props.appName;
       this.userName = props.userName;
       this.userMail = props.userMail;
-
-      done();
-    }).bind(this);
+    });
   }
 
   writing() {
