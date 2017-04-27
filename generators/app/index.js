@@ -43,7 +43,7 @@ module.exports = class extends Generator {
       {
         appName: this.appName,
         userName: this.userName,
-        userEmail: this.userMail
+        userMail: this.userMail
       }
     );
     this.fs.copy(
