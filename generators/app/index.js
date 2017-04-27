@@ -29,14 +29,13 @@ module.exports = class extends Generator {
         default: this.user.git.email || 'example@example.com'
       }
     ];
-
-    this.prompt(prompts, function (props) {
+    this.prompt(prompts).then(props => {
       this.appName = props.appName;
       this.userName = props.userName;
       this.userMail = props.userMail;
 
       done();
-    }.bind(this));
+    });
   }
 
   writing() {
